@@ -16,14 +16,14 @@ namespace TestApp2
             int[] array = new int[15];
             Random random = new Random();
 
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 15; i++) //Заполнение массива
             {
                 array[i] = random.Next(0,50);
                 Console.WriteLine(array[i]);
             }
-            int maxValue = array[0];
+            int maxValue = array[0]; // Инициализация переменных для хранения мин/макс значений
             int minValue = array[0];
-            foreach (var a in array)
+            foreach (var a in array)  //Поиск мин/макс значений
             {
                 if (a > maxValue)
                     maxValue = a;

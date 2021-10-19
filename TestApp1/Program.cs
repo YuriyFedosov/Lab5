@@ -14,13 +14,13 @@ namespace TestApp1
 
             int[] array = new int[7];
             float sumArray = 0;
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 7; i++) //Заполнене массива
             {
                 Console.Write("Введите {0} значение: ", i+1);
                 array[i] = Convert.ToInt32(Console.ReadLine());
 
             }
-            foreach(int a in array)
+            foreach(int a in array) //Подсчет
             {
                 sumArray += a;
             }
